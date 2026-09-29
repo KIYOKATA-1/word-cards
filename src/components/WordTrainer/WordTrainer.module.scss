@@ -1,0 +1,49 @@
+.trainer {
+  display: grid;
+  gap: 20px;
+  margin-top: 28px;
+}
+
+.status {
+  min-height: 1.5em;
+  color: #606578;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+.hint {
+  max-width: 370px;
+  margin-inline: auto;
+  color: #606578;
+  font-size: 0.85rem;
+  text-align: center;
+}
+
+.next {
+  min-height: 52px;
+  padding: 12px 24px;
+  border: 1px solid transparent;
+  border-radius: 14px;
+  background: #5145a5;
+  color: #ffffff;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 160ms ease;
+}
+
+.next:disabled {
+  background: #68647e;
+  cursor: wait;
+}
+
+@media (hover: hover) {
+  .next:hover:not(:disabled) {
+    background: #403588;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .next {
+    transition: none;
+  }
+}

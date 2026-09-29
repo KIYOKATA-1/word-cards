@@ -1,0 +1,43 @@
+.shell {
+  width: min(100%, 640px);
+  margin-inline: auto;
+  padding: clamp(32px, 7vw, 80px) 24px 32px;
+}
+
+.header,
+.footer {
+  text-align: center;
+}
+
+.eyebrow {
+  margin-bottom: 12px;
+  color: #5145a5;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.header h1 {
+  font-size: clamp(2rem, 6vw, 2.8rem);
+  line-height: 1.15;
+  letter-spacing: -0.04em;
+}
+
+.description {
+  max-width: 390px;
+  margin: 16px auto 0;
+  color: #606578;
+}
+
+.footer {
+  margin-top: 36px;
+  color: #606578;
+  font-size: 0.8rem;
+}
+
+@media (max-width: 400px) {
+  .shell {
+    padding-inline: 16px;
+  }
+}

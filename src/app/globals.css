@@ -8,8 +8,17 @@
 
 body {
   min-height: 100vh;
-  background: #ffffff;
-  color: #171717;
+  background: #f5f6fa;
+  color: #20243a;
   font-family: Arial, Helvetica, sans-serif;
   line-height: 1.5;
+}
+
+button {
+  font: inherit;
+}
+
+button:focus-visible {
+  outline: 3px solid #4338ca;
+  outline-offset: 5px;
 }
